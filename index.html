@@ -1,0 +1,76 @@
+<!doctype html>
+</section>
+
+
+<section class="section grid2">
+<div class="card">
+<h3>القبلة (AR)</h3>
+<div class="qibla">
+<video id="cam" playsinline muted></video>
+<div class="overlay">
+<div class="compass"><span id="bearing">—</span>°</div>
+<div class="arrow" id="qiblaArrow">🡩</div>
+</div>
+</div>
+<div class="grid2 tight">
+<button id="startCam" class="btn">تشغيل الكاميرا</button>
+<div class="muted small">يحتاج إذن حركة/كاميرا</div>
+</div>
+</div>
+<div class="card">
+<h3>مكتبة الأحاديث</h3>
+<div class="grid2 tight">
+<input id="hadithQuery" placeholder="ابحث…" />
+<button id="hadithSearch" class="btn">بحث</button>
+</div>
+<ul id="hadithList" class="list"></ul>
+</div>
+</section>
+
+
+<!-- Social / Groups / Donations / Kids -->
+<section class="section grid3">
+<div class="card">
+<h3>مجموعات الحفظ</h3>
+<div class="grid2 tight">
+<input id="groupName" placeholder="اسم المجموعة" />
+<button id="groupCreate" class="btn">إنشاء</button>
+</div>
+<ul id="groupList" class="list"></ul>
+</div>
+
+
+<div class="card">
+<h3>التبرعات والصدقات</h3>
+<div class="grid2 tight">
+<input id="donateSum" type="number" value="50" />
+<button id="donateBtn" class="btn">تبرّع الآن</button>
+</div>
+<p class="muted small">سجّل التبرعات محفوظ محليًا. استبدل رابط الدفع لاحقًا.</p>
+</div>
+
+
+<div class="card">
+<h3>وضع الأطفال</h3>
+<button id="kidsToggle" class="btn">تفعيل/إلغاء</button>
+<div id="kidsWrap" class="kids" hidden>
+<div id="kidsGame" class="cards"></div>
+<div class="grid2 tight">
+<button id="kidsWin" class="btn">+10 نقاط</button>
+<button id="kidsReset" class="btn ghost">تصفير</button>
+</div>
+<div class="badge" id="kidsPts">0</div>
+</div>
+</div>
+</section>
+
+
+<footer class="footer">
+بإتقان من ليث النسر — <span id="year"></span> — نسخ قادمة ومشاريع أخرى قريبًا بإذن الله.
+</footer>
+</main>
+
+
+<script src="app.js"></script>
+</body>
+</html>
